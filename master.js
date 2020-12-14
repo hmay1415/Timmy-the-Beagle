@@ -1,5 +1,24 @@
 'use strict'
 
+var likeBeagles = prompt('Do you like Beagles?')
+
+while(likeBeagles.toLowerCase() != 'yes') {
+    likeBeagles = prompt('Wrong answer! Try again');
+}
+
+var perfect = '100';
+
+for(var i = 0; i < 4; i++) {
+    var correctPerfect = prompt('What is the perfect number of beagles?')
+    if (correctPerfect === perfect){
+        alert('Hooray! You got it!');
+        break;
+    }
+    if (i === 3 && correctPerfect != perfect){
+        alert('Go away and think about your answer for 5 minutes before trying again');
+    }
+}
+
 function askUserName(){
 var userName = prompt('Please enter your name for a fun surprise');
 
