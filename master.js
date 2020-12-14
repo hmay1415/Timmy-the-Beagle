@@ -4,9 +4,9 @@ function askUserName(){
 var userName = prompt('Please enter your name for a fun surprise');
 
 if (userName == 'Hilary'){
-    document.write('A friend of my Mom ' + userName)
+    document.write('A friend of my Mom ' + userName.toUpperCase())
 } else {
-document.write('A Friend of ' + userName);
+document.write('A Friend of ' + userName.toLowerCase());
 }
 }
 
