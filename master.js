@@ -2,7 +2,7 @@
 
 var likeBeagles = prompt('Do you like Beagles?')
 
-while(likeBeagles.toLowerCase() != 'yes') {
+while(likeBeagles.toLowerCase() !== 'yes') {
     likeBeagles = prompt('Wrong answer! Try again');
 }
 
@@ -15,8 +15,12 @@ for(var i = 0; i < 4; i++) {
         alert('Hooray! You got it!');
         break;
     }
-     if (i === 3 && correctPerfect != perfect){
+     else if (i === 3 && correctPerfect !== perfect){
         alert('Go away and think about your answer for 5 minutes before trying again');
+    }
+    else {
+        console.log(i)
+        alert('sorry, try again!');
     }
 }
 
